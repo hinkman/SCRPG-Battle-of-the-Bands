@@ -542,6 +542,206 @@ function buildVillainActor(scene, villain, folderId, ids, sort) {
   });
 }
 
+function emptySixStrings(values = []) {
+  const keys = ["one", "two", "three", "four", "five", "six"];
+  const out = {};
+  for (let i = 0; i < keys.length; i++) out[keys[i]] = values[i] || "";
+  return out;
+}
+
+function emptySixBooleans() {
+  return { one: false, two: false, three: false, four: false, five: false, six: false };
+}
+
+function emptyFourBooleans() {
+  return { one: false, two: false, three: false, four: false };
+}
+
+function emptyModeStrings() {
+  return { main: "", green1: "", green2: "", yellow1: "", yellow2: "", red1: "" };
+}
+
+function emptyModeBools() {
+  return { main: false, green1: false, green2: false, yellow1: false, yellow2: false, red1: false };
+}
+
+function buildHeroActor(scene, hero, folderId, ids, sort = 0) {
+  const actorId = foundryId(`actor:hero:${scene.key}:${slug(hero.name)}`);
+  if (ids.has(actorId)) throw new Error(`Duplicate hero id ${actorId}`);
+  ids.add(actorId);
+
+  const items = [];
+  let itemSort = 0;
+
+  for (const power of hero.powers || []) {
+    const itemId = foundryId(`item:power:${scene.key}:${slug(hero.name)}:${slug(power.name)}`);
+    if (ids.has(itemId)) throw new Error(`Duplicate power id ${itemId}`);
+    ids.add(itemId);
+    items.push(makeItem({
+      name: power.name,
+      type: "power",
+      img: "icons/svg/aura.svg",
+      itemId,
+      actorId,
+      sort: itemSort++,
+      system: { dieType: power.die, aux: "main", selected: null, description: "" }
+    }));
+  }
+
+  for (const quality of hero.qualities || []) {
+    const itemId = foundryId(`item:quality:${scene.key}:${slug(hero.name)}:${slug(quality.name)}`);
+    if (ids.has(itemId)) throw new Error(`Duplicate quality id ${itemId}`);
+    ids.add(itemId);
+    items.push(makeItem({
+      name: quality.name,
+      type: "quality",
+      img: "icons/svg/book.svg",
+      itemId,
+      actorId,
+      sort: itemSort++,
+      system: { dieType: quality.die, selected: null, description: "" }
+    }));
+  }
+
+  for (const principle of hero.principles || []) {
+    const itemId = foundryId(`item:ability:${scene.key}:${slug(hero.name)}:${slug(principle.name)}`);
+    if (ids.has(itemId)) throw new Error(`Duplicate principle ability id ${itemId}`);
+    ids.add(itemId);
+    items.push(makeItem({
+      name: principle.name,
+      type: "ability",
+      img: "icons/svg/upgrade.svg",
+      itemId,
+      actorId,
+      sort: itemSort++,
+      system: {
+        aux: "green",
+        icon: abilityIcons(["overcome"]),
+        type: "A",
+        gameText: p(principle.greenAbility)
+      }
+    }));
+  }
+
+  for (const ability of hero.abilities || []) {
+    const itemId = foundryId(`item:ability:${scene.key}:${slug(hero.name)}:${slug(ability.name)}`);
+    if (ids.has(itemId)) throw new Error(`Duplicate ability id ${itemId}`);
+    ids.add(itemId);
+    items.push(makeItem({
+      name: ability.name,
+      type: "ability",
+      img: "icons/svg/sword.svg",
+      itemId,
+      actorId,
+      sort: itemSort++,
+      system: {
+        aux: ability.aux,
+        icon: abilityIcons(ability.icons),
+        type: ability.type,
+        gameText: p(ability.gameText)
+      }
+    }));
+  }
+
+  const [firstPrinciple, secondPrinciple] = hero.principles || [{}, {}];
+  const health = hero.health || {};
+  const statusDie = hero.statusDie || {};
+
+  return baseActor({
+    name: hero.name,
+    type: "hero",
+    img: "icons/svg/mystery-man.svg",
+    folderId,
+    actorId,
+    sort,
+    items,
+    flags: {
+      "scrpg-battle-of-the-bands": {
+        sceneKey: scene.key,
+        sourcePages: hero.sourcePages || "",
+        requiredForScenes: hero.requiredForScenes || [scene.name],
+        biography: hero.biography || ""
+      }
+    },
+    system: {
+      alias: hero.alias || "",
+      archetype: hero.archetype || "",
+      wounds: { value: 0, max: health.max || 0 },
+      mode: "main",
+      modName: "",
+      firstDie: "d4",
+      secondDie: "d4",
+      thirdDie: "d4",
+      firstDieName: "N/A",
+      secondDieName: "N/A",
+      thirdDieName: "N/A",
+      firstPrinciple: {
+        name: firstPrinciple?.name || "",
+        roleplaying: firstPrinciple?.roleplaying ? p(firstPrinciple.roleplaying) : "",
+        minorTwist: firstPrinciple?.minorTwist ? p(firstPrinciple.minorTwist) : "",
+        majorTwist: firstPrinciple?.majorTwist ? p(firstPrinciple.majorTwist) : ""
+      },
+      secondPrinciple: {
+        name: secondPrinciple?.name || "",
+        roleplaying: secondPrinciple?.roleplaying ? p(secondPrinciple.roleplaying) : "",
+        minorTwist: secondPrinciple?.minorTwist ? p(secondPrinciple.minorTwist) : "",
+        majorTwist: secondPrinciple?.majorTwist ? p(secondPrinciple.majorTwist) : ""
+      },
+      backIssue: emptySixStrings(),
+      collections: emptySixStrings(hero.collections || []),
+      collectionsUsed: emptySixBooleans(),
+      heroPoints: {
+        game: { one: false, two: false, three: false, four: false, five: false },
+        one: emptyFourBooleans(),
+        two: emptyFourBooleans(),
+        three: emptyFourBooleans(),
+        four: emptyFourBooleans()
+      },
+      gender: hero.gender || "",
+      age: hero.age || "",
+      height: hero.height || "",
+      eyes: hero.eyes || "",
+      hair: hero.hair || "",
+      skin: hero.skin || "",
+      build: hero.build || "",
+      costume: hero.costume ? p(hero.costume) : "",
+      background: hero.background || "",
+      powerSource: hero.powerSource || "",
+      personality: hero.personality || "",
+      health: {
+        greenLow: health.greenLow || 0,
+        yellowHigh: health.yellowHigh || 0,
+        yellowLow: health.yellowLow || 0,
+        redHigh: health.redHigh || 0,
+        redLow: health.redLow || 1
+      },
+      statusDie: {
+        green: statusDie.green || "d8",
+        yellow: statusDie.yellow || "d8",
+        red: statusDie.red || "d8",
+        civilianGreen: statusDie.green || "d8",
+        civilianYellow: statusDie.yellow || "d8",
+        civilianRed: statusDie.red || "d8"
+      },
+      scene: "green",
+      out: hero.out ? p(hero.out) : "",
+      modeName: emptyModeStrings(),
+      modeDescription: emptyModeStrings(),
+      modeDisplayed: emptyModeBools(),
+      modular: false,
+      powerless: false,
+      formchanger: false,
+      divided: false,
+      dividedPsyche: false,
+      dividedStatus: false,
+      civilianMode: false,
+      poweredMode: false,
+      persistent: false,
+      exclusive: false
+    }
+  });
+}
+
 async function packActors(data) {
   const packKey = data.packKey;
   const sourceRoot = path.join(root, "src/packs", packKey);
@@ -565,12 +765,14 @@ async function packActors(data) {
 
     const typeFolders = [
       { key: "scene-trackers", label: "Scene Trackers" },
+      { key: "heroes", label: "Heroes" },
       { key: "environments", label: "Environments" },
       { key: "minions", label: "Minions" },
       { key: "villains", label: "Villains" }
     ];
 
     const wanted = new Set(["scene-trackers", "environments"]);
+    if (scene.heroes?.length) wanted.add("heroes");
     if (scene.minions?.length) wanted.add("minions");
     if (scene.villains?.length) wanted.add("villains");
 
@@ -596,6 +798,13 @@ async function packActors(data) {
       path.join(sourceRoot, scene.key, "scene-trackers", `${slug(tracker.name)}.json`),
       tracker
     );
+
+    let heroSort = 0;
+    for (const hero of scene.heroes || []) {
+      const actor = buildHeroActor(scene, hero, folderIds.heroes, ids, heroSort += 1000);
+      documents.push(actor);
+      writeJson(path.join(sourceRoot, scene.key, "heroes", `${slug(hero.name)}.json`), actor);
+    }
 
     const envActor = buildEnvironmentActor(scene, folderIds.environments, ids);
     documents.push(envActor);
