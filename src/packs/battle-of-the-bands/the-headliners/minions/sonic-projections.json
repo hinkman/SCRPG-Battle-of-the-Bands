@@ -1,0 +1,89 @@
+{
+  "name": "Sonic Projections",
+  "type": "minion",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "Sonic Projections",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d6",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "prototypeToken": {
+    "name": "Sonic Projections",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Conduit",
+      "type": "minionForm",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "description": "<p>Whenever a sonic projection damages a hero, one nearby member of Helfyre recovers health equal to the amount of damage dealt.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "HMAJbHqk3LlGMnwm",
+      "_key": "!actors.items!s2aCRPJ3O1zzo6Qa.HMAJbHqk3LlGMnwm"
+    }
+  ],
+  "effects": [],
+  "folder": "nMyGjjrwSEQnhiRe",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "the-headliners",
+      "quantityNote": "1 per hero (also spawned by Sound Minions twist)",
+      "description": "These ghostly energy beings seem focused on draining energy from the foes of Helfyre. They move in time with the music. (1 per hero (also spawned by Sound Minions twist).)"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "s2aCRPJ3O1zzo6Qa",
+  "_key": "!actors!s2aCRPJ3O1zzo6Qa"
+}

@@ -1,0 +1,277 @@
+{
+  "name": "See A Million Faces",
+  "type": "environment",
+  "img": "icons/svg/castle.svg",
+  "system": {
+    "firstDie": "d8",
+    "secondDie": "d8",
+    "thirdDie": "d6",
+    "firstDieName": "Challenge",
+    "secondDieName": "Crowd",
+    "thirdDieName": "Venue",
+    "description": "<p><strong>See A Million Faces (And Rock Them All)</strong></p><p>Rockstar is on stage, along with any heroes willing to help out. The crowd doesn't care, so it's up to her to grab their attention and become a legend! (Ask Rockstar the name of the song she's playing.)</p><p><strong>Action:</strong> On her turns, Rockstar attempts to Overcome this challenge. Other heroes on stage may use their turns to either Boost Rockstar or to attempt to Overcome. But be careful: upstaging Rockstar might have long-term consequences for team relations!</p><p><strong>Resolution:</strong></p><ul><li>The crowd begins to warm up to the music.</li><li>Some dancing and headbanging ensues.</li><li>A stellar performance! The crowd cheers!</li></ul><p><strong>Outcome:</strong> When all three parts of this challenge have been overcome, proceed to the Conclusion. See the Scene 1 Conclusion for other end conditions.</p><p><em>Note: In the printed issue this is a challenge (not a full environment). Twists below are the Potential Twists from pp. 257. They are stored on all scene zones so the environment roller can find them regardless of tracker color.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "See A Million Faces",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Demoralized",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Hinder self with Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "2BicKfByGykBSqCZ",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.2BicKfByGykBSqCZ"
+    },
+    {
+      "name": "Guitar Strings Snap",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenminor",
+        "description": "<p>Reduce your Quality die by one size for your next Overcome attempt at the See a Million Faces Challenge.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "r1SByI6JmlnrC6h5",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.r1SByI6JmlnrC6h5"
+    },
+    {
+      "name": "Aggressive Hecklers",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "greenmajor",
+        "description": "<p>(H)/2 Moshers climb onto the stage to try to disrupt your performance. (H) always equals the number of heroes in a scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "kQVKoOZsrhurNZUL",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.kQVKoOZsrhurNZUL"
+    },
+    {
+      "name": "Demoralized",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Hinder self with Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "0S2lAyXbBrC81QaR",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.0S2lAyXbBrC81QaR"
+    },
+    {
+      "name": "Guitar Strings Snap",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowminor",
+        "description": "<p>Reduce your Quality die by one size for your next Overcome attempt at the See a Million Faces Challenge.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "KExB7LEkUHXyVyKw",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.KExB7LEkUHXyVyKw"
+    },
+    {
+      "name": "Aggressive Hecklers",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "yellowmajor",
+        "description": "<p>(H)/2 Moshers climb onto the stage to try to disrupt your performance. (H) always equals the number of heroes in a scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "v64fxrRstjxhByzX",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.v64fxrRstjxhByzX"
+    },
+    {
+      "name": "Demoralized",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redminor",
+        "description": "<p>Hinder self with Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "50m0FfQ0nFQO0ikG",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.50m0FfQ0nFQO0ikG"
+    },
+    {
+      "name": "Guitar Strings Snap",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redminor",
+        "description": "<p>Reduce your Quality die by one size for your next Overcome attempt at the See a Million Faces Challenge.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "OBjMg7Qhp8bpcbZt",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.OBjMg7Qhp8bpcbZt"
+    },
+    {
+      "name": "Aggressive Hecklers",
+      "type": "environmentTwist",
+      "img": "icons/svg/explosion.svg",
+      "system": {
+        "type": "redmajor",
+        "description": "<p>(H)/2 Moshers climb onto the stage to try to disrupt your performance. (H) always equals the number of heroes in a scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "OGeCX0TrEgPYya5n",
+      "_key": "!actors.items!NsRdZUIqySnEr5P1.OGeCX0TrEgPYya5n"
+    }
+  ],
+  "effects": [],
+  "folder": "PeqkB3Dld5l1WBFl",
+  "sort": 2000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "opening-act",
+      "modeledAs": "challenge"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "NsRdZUIqySnEr5P1",
+  "_key": "!actors!NsRdZUIqySnEr5P1"
+}

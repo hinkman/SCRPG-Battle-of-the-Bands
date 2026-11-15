@@ -1,0 +1,445 @@
+{
+  "name": "Blister",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Cinder Azarian",
+    "archetype": "Fragile",
+    "approach": "Focused",
+    "wounds": {
+      "value": 0,
+      "max": 30
+    },
+    "mode": "main",
+    "modName": "",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "prototypeToken": {
+    "name": "Blister",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Fire",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d12",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "ZmDCCAgBlySaXVXO",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.ZmDCCAgBlySaXVXO"
+    },
+    {
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "qSG0uNdQ2Umq1B7j",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.qSG0uNdQ2Umq1B7j"
+    },
+    {
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "NELerVca02jsCqsA",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.NELerVca02jsCqsA"
+    },
+    {
+      "name": "Creativity",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "TGnhqPEQr6ui6vSb",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.TGnhqPEQr6ui6vSb"
+    },
+    {
+      "name": "Hot Licks",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "2Kung8L4Dle3pHX8",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.2Kung8L4Dle3pHX8"
+    },
+    {
+      "name": "Green: 30-23",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "m8lcZsejaFTyo02g",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.m8lcZsejaFTyo02g"
+    },
+    {
+      "name": "Yellow: 22-12",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "oF0ftCfnwbitMQGW",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.oF0ftCfnwbitMQGW"
+    },
+    {
+      "name": "Red: 11-1",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "e2vCATTG20zcs6zg",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.e2vCATTG20zcs6zg"
+    },
+    {
+      "name": "Blazing Axe",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack one target using Fire. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "IRMa7zwvNFRpprST",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.IRMa7zwvNFRpprST"
+    },
+    {
+      "name": "Blistering Solo",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Creativity. Then remove all bonuses from the target.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "seAfUSGRPWQxk80x",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.seAfUSGRPWQxk80x"
+    },
+    {
+      "name": "Burning Melody",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder one target using Presence. Use your Max die. Attack that target using your Mid die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "NowuPyAYYosD48lL",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.NowuPyAYYosD48lL"
+    },
+    {
+      "name": "Sleep Now in the Fire",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": true
+        },
+        "type": "R",
+        "gameText": "<p>When Attacked with Fire, recover that amount of Health instead of taking damage. When Hindered with Fire, Boost yourself instead.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 11,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "yUnLB5zwPe0cs7dS",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.yUnLB5zwPe0cs7dS"
+    },
+    {
+      "name": "Stage Dive",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Whenever your personal zone changes, you may immediately move elsewhere in the scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 12,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "n6LzJQlnbtJwVN7I",
+      "_key": "!actors.items!7N8WrBe6GWiYgwd1.n6LzJQlnbtJwVN7I"
+    }
+  ],
+  "effects": [],
+  "folder": "Tb14a4ap9ZTWKD4n",
+  "sort": 2000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "the-headliners",
+      "issue": "Battle of the Bands",
+      "noUpgradesOrMasteries": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "7N8WrBe6GWiYgwd1",
+  "_key": "!actors!7N8WrBe6GWiYgwd1"
+}

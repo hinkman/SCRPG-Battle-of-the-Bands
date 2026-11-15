@@ -1,0 +1,89 @@
+{
+  "name": "Moshers",
+  "type": "minion",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "groups": "1",
+    "groupName": {
+      "one": "Moshers",
+      "two": "Group 2",
+      "three": "Group 3",
+      "four": "Group 4",
+      "five": "Group 5",
+      "six": "Group 6",
+      "seven": "Group 7",
+      "eight": "Group 8",
+      "nine": "Group 9",
+      "ten": "Group 10"
+    },
+    "typicalDie": {
+      "one": "d6",
+      "two": "d4",
+      "three": "d4",
+      "four": "d4",
+      "five": "d4",
+      "six": "d4",
+      "seven": "d4",
+      "eight": "d4",
+      "nine": "d4",
+      "ten": "d4"
+    }
+  },
+  "prototypeToken": {
+    "name": "Moshers",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Thumpin!",
+      "type": "minionForm",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "description": "<p>Roll the minion's die when knocked out. On a 1, they got knocked down, but get back up again at a d4.</p>",
+        "bonus": "one",
+        "group": 1
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "8PFpLD8omaMS8Lkj",
+      "_key": "!actors.items!mEjDlBUZJHssVClI.8PFpLD8omaMS8Lkj"
+    }
+  ],
+  "effects": [],
+  "folder": "0FMFjtEsGOwiYSRT",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "opening-act",
+      "quantityNote": "2 per hero",
+      "description": "These flailing dancers want more! They're climbing onto the stage! They're making a mess, and they don't have a lot of respect for the show or personal boundaries, apparently. (2 per hero.)"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "mEjDlBUZJHssVClI",
+  "_key": "!actors!mEjDlBUZJHssVClI"
+}

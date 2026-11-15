@@ -1,0 +1,493 @@
+{
+  "name": "Screech",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Damian Belter",
+    "archetype": "Inhibitor",
+    "approach": "Disruptive",
+    "wounds": {
+      "value": 0,
+      "max": 50
+    },
+    "mode": "main",
+    "modName": "",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "prototypeToken": {
+    "name": "Screech",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Leaping",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "SCk44YB8GOWqJezx",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.SCk44YB8GOWqJezx"
+    },
+    {
+      "name": "Presence",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "ROXnGNGLIh1M9xGc",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.ROXnGNGLIh1M9xGc"
+    },
+    {
+      "name": "Sonic",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "HPTgoFWdnXeNXB58",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.HPTgoFWdnXeNXB58"
+    },
+    {
+      "name": "Vitality",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "yeJHhZlJHyRkjnXv",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.yeJHhZlJHyRkjnXv"
+    },
+    {
+      "name": "Banter",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "V9LcCMQYr4Sz3xtw",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.V9LcCMQYr4Sz3xtw"
+    },
+    {
+      "name": "Creativity",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "HG1CAu0Drzg33ZRu",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.HG1CAu0Drzg33ZRu"
+    },
+    {
+      "name": "Ranged Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "KcJ87LQHjybbSH0G",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.KcJ87LQHjybbSH0G"
+    },
+    {
+      "name": "Screamo",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "HzaWYiQKySumLyum",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.HzaWYiQKySumLyum"
+    },
+    {
+      "name": "3+ Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "3znviigGvnFGDFV8",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.3znviigGvnFGDFV8"
+    },
+    {
+      "name": "1-2 Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "iFImC8QYfAsv9i2V",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.iFImC8QYfAsv9i2V"
+    },
+    {
+      "name": "0 Heroes with Penalties",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "z1xhhf7fx23JRU1C",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.z1xhhf7fx23JRU1C"
+    },
+    {
+      "name": "Earworm",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 11,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "jHoKgiTvTfUey33A",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.jHoKgiTvTfUey33A"
+    },
+    {
+      "name": "Ring their Ears",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Sonic. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 12,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "LeoU1e0ON5esKZXa",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.LeoU1e0ON5esKZXa"
+    },
+    {
+      "name": "Scream of Anger",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder using Sonic and use your Max+Mid dice, or use your Max die and make it persistent and exclusive.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 13,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "intUuo5OQ9XSOM3V",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.intUuo5OQ9XSOM3V"
+    },
+    {
+      "name": "Shout it Out Loud",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder multiple targets using Banter. Use your Mid die. You and any nearby allies Defend using your Max die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 14,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "dzbyqHeIYPLWVGRN",
+      "_key": "!actors.items!x0hsgegqf0kr9Qos.dzbyqHeIYPLWVGRN"
+    }
+  ],
+  "effects": [],
+  "folder": "Tb14a4ap9ZTWKD4n",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "the-headliners",
+      "issue": "Battle of the Bands",
+      "noUpgradesOrMasteries": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "x0hsgegqf0kr9Qos",
+  "_key": "!actors!x0hsgegqf0kr9Qos"
+}

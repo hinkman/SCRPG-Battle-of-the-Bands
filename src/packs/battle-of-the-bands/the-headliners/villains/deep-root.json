@@ -1,0 +1,474 @@
+{
+  "name": "Deep Root",
+  "type": "villain",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "alias": "Silvio Thorne",
+    "archetype": "Indomitable",
+    "approach": "Generalist",
+    "wounds": {
+      "value": 0,
+      "max": 65
+    },
+    "mode": "main",
+    "modName": "",
+    "firstDie": "d4",
+    "secondDie": "d4",
+    "thirdDie": "d4",
+    "firstDieName": "N/A",
+    "secondDieName": "N/A",
+    "thirdDieName": "N/A"
+  },
+  "prototypeToken": {
+    "name": "Deep Root",
+    "displayName": 20,
+    "actorLink": true
+  },
+  "items": [
+    {
+      "name": "Awareness",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d6",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "Hl2RgEhpzrlwOAg2",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.Hl2RgEhpzrlwOAg2"
+    },
+    {
+      "name": "Plants",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d10",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "fubkrViNgUAhtc0E",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.fubkrViNgUAhtc0E"
+    },
+    {
+      "name": "Strength",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "6JIH4uRQ8QaEzaat",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.6JIH4uRQ8QaEzaat"
+    },
+    {
+      "name": "Swinging",
+      "type": "power",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "dieType": "d8",
+        "aux": "main",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "65AmTn7kX8PkS2UK",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.65AmTn7kX8PkS2UK"
+    },
+    {
+      "name": "Close Combat",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d6",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "2ydTypWVYZs9Pii2",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.2ydTypWVYZs9Pii2"
+    },
+    {
+      "name": "Imposing",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d10",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "BAKIFtILKWIPkpAQ",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.BAKIFtILKWIPkpAQ"
+    },
+    {
+      "name": "Self-Discipline",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "vOXS1RbFmRUaS7EV",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.vOXS1RbFmRUaS7EV"
+    },
+    {
+      "name": "Steady Rhythm",
+      "type": "quality",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": null,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "wIY2lc22Dcxfi1WO",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.wIY2lc22Dcxfi1WO"
+    },
+    {
+      "name": "Always (Constant)",
+      "type": "villainStatus",
+      "img": "icons/svg/d20-grey.svg",
+      "system": {
+        "dieType": "d8",
+        "selected": false,
+        "description": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "ggCscQVYmqbFoEt4",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.ggCscQVYmqbFoEt4"
+    },
+    {
+      "name": "Bark Shield",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": true,
+          "overcome": false,
+          "hinder": false,
+          "boost": true,
+          "recover": false
+        },
+        "type": "R",
+        "gameText": "<p>When an ally is Attacked, Defend them by rolling your single Plants die. Boost yourself by that amount.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "derAHpmfck7mjPSm",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.derAHpmfck7mjPSm"
+    },
+    {
+      "name": "Can't Stop the Beatdown",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": true,
+          "overcome": false,
+          "hinder": true,
+          "boost": false,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Swinging. Either Hinder that target using Max, or Defend yourself using Min and you and that target end up elsewhere in the scene.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "WsFbrfwLhbCr8fGY",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.WsFbrfwLhbCr8fGY"
+    },
+    {
+      "name": "Photosynthestrike",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": true,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": true
+        },
+        "type": "A",
+        "gameText": "<p>Attack using Close Combat. Use your Max die. Recover Health equal to your Min die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 11,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "Yt181jL8FYD0jUUf",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.Yt181jL8FYD0jUUf"
+    },
+    {
+      "name": "Plant Life of the Party",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": false,
+          "boost": false,
+          "recover": false
+        },
+        "type": "I",
+        "gameText": "<p>Reduce damage dealt to you by 2.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 12,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "IUwcnLrN3SA57dKM",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.IUwcnLrN3SA57dKM"
+    },
+    {
+      "name": "Writhing Flora",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "aux": "villain",
+        "icon": {
+          "attack": false,
+          "defend": false,
+          "overcome": false,
+          "hinder": true,
+          "boost": true,
+          "recover": false
+        },
+        "type": "A",
+        "gameText": "<p>Hinder multiple nearby targets using Plants. Boost yourself using your Max die.</p>"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 13,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.000",
+        "systemId": "scrpg-foundry",
+        "systemVersion": "0.9.15",
+        "createdTime": 1763182800000,
+        "modifiedTime": 1763182800000,
+        "lastModifiedBy": null
+      },
+      "_id": "XTOpMI9l3LpF9joP",
+      "_key": "!actors.items!BwFhqAJmm2TpbX32.XTOpMI9l3LpF9joP"
+    }
+  ],
+  "effects": [],
+  "folder": "Tb14a4ap9ZTWKD4n",
+  "sort": 3000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "scrpg-battle-of-the-bands": {
+      "sceneKey": "the-headliners",
+      "issue": "Battle of the Bands",
+      "noUpgradesOrMasteries": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "BwFhqAJmm2TpbX32",
+  "_key": "!actors!BwFhqAJmm2TpbX32"
+}

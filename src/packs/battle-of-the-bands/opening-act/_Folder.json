@@ -1,0 +1,20 @@
+{
+  "name": "Opening Act",
+  "description": "",
+  "folder": null,
+  "type": "Actor",
+  "sorting": "a",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "ks2DUVgDm4t5DsA3",
+  "_key": "!folders!ks2DUVgDm4t5DsA3"
+}
