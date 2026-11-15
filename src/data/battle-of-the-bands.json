@@ -65,6 +65,128 @@
           }
         }
       ],
+      "heroes": [
+        {
+          "name": "Rockstar",
+          "alias": "Megan \"The Hammer\" Lee",
+          "sourcePages": "330–332",
+          "requiredForScenes": ["Opening Act", "The Headliners"],
+          "gender": "Female",
+          "age": "Late-Teens",
+          "height": "5'7\"",
+          "eyes": "Blue",
+          "hair": "Blonde",
+          "skin": "Fair",
+          "build": "Athletic",
+          "costume": "Rockstar changes her outfit with some regularity, always looking for more hip and/or audacious stage clothes. She also changes the color of the ends of her hair, but always paints the star over her right eye to match.",
+          "background": "Unremarkable",
+          "powerSource": "Accident",
+          "archetype": "Physical Powerhouse",
+          "personality": "Arrogant",
+          "collections": ["Daybreak Vol. 1"],
+          "biography": "Megan Lee spent a lot of time daydreaming. When her dad Rick had talked about spending the summer together, she had thought it would be more exciting than poking rocks, but \"father-daughter bonding time\" turned out to be a series of dig sites as her geologist father measured rocks. At Dig Site 17 in Arizona she fell more than a hundred feet into a quarry and survived. Walking back, she found her rock hammer's metal handle bent; when she grabbed it, her hands covered in rock and she pulled it straight as if it were a paperclip. She spent her junior year discovering her powers — rocky protection and super strength — as things happened to her.",
+          "health": {
+            "max": 30,
+            "greenLow": 23,
+            "yellowHigh": 22,
+            "yellowLow": 12,
+            "redHigh": 11,
+            "redLow": 1
+          },
+          "statusDie": {
+            "green": "d10",
+            "yellow": "d8",
+            "red": "d6"
+          },
+          "principles": [
+            {
+              "name": "Principle of Ambition",
+              "roleplaying": "There is something you want, and you will strive towards achieving your goals, no matter the cost. You see paths to victory that no one else will.",
+              "minorTwist": "How are the pursuit of your goals getting in the way of being a hero in this situation?",
+              "majorTwist": "What did you just pass up or miss that could have helped you achieve your biggest goal at last?",
+              "greenAbility": "Overcome a situation where someone else has given you a bonus from a Boost. Use your Max die. You and each of your allies gain a hero point."
+            },
+            {
+              "name": "Principle of Strength",
+              "roleplaying": "You are very strong, so you must be careful to not crush delicate things. You do not need to roll to perform mundane acts of great strength.",
+              "minorTwist": "What just broke?",
+              "majorTwist": "Who just broke?",
+              "greenAbility": "Overcome using brute force. Use your Max die. You and each of your allies gain a hero point."
+            }
+          ],
+          "powers": [
+            { "name": "Stone", "die": "d12" },
+            { "name": "Strength", "die": "d8" },
+            { "name": "Vitality", "die": "d8" },
+            { "name": "Transmutation", "die": "d6" }
+          ],
+          "qualities": [
+            { "name": "Creativity", "die": "d10" },
+            { "name": "Close Combat", "die": "d8" },
+            { "name": "Hard Rock Lifestyle", "die": "d8" },
+            { "name": "Leadership", "die": "d6" }
+          ],
+          "abilities": [
+            {
+              "name": "Rock Out",
+              "aux": "green",
+              "type": "R",
+              "icons": ["boost"],
+              "gameText": "When you change personal zones, you may Boost by rolling your single Transmutation die."
+            },
+            {
+              "name": "Shake It Off",
+              "aux": "green",
+              "type": "I",
+              "icons": [],
+              "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone."
+            },
+            {
+              "name": "Wicked Solo",
+              "aux": "green",
+              "type": "A",
+              "icons": ["attack"],
+              "gameText": "Attack using Strength. The target of that Attack must take the Attack action against you on its next turn, if possible."
+            },
+            {
+              "name": "Drop the Hammer",
+              "aux": "yellow",
+              "type": "A",
+              "icons": ["attack", "hinder"],
+              "gameText": "Attack using Strength. Hinder that same target using your Min die."
+            },
+            {
+              "name": "Shard Shatter",
+              "aux": "yellow",
+              "type": "R",
+              "icons": ["attack"],
+              "gameText": "When your personal zone changes, Attack all close enemy targets by rolling your single Stone die."
+            },
+            {
+              "name": "Standing Ovation",
+              "aux": "yellow",
+              "type": "R",
+              "icons": ["recover"],
+              "gameText": "When you eliminate a minion with an Attack using Close Combat, Recover health equal to your Min die."
+            },
+            {
+              "name": "Encore!",
+              "aux": "red",
+              "type": "A",
+              "icons": ["hinder", "recover"],
+              "gameText": "Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice."
+            },
+            {
+              "name": "Power Chord",
+              "aux": "red",
+              "type": "A",
+              "icons": ["attack"],
+              "gameText": "Attack using Stone. Use your Max+Mid dice."
+            }
+          ],
+          "out": "Hinder an opponent using Stone."
+        }
+      ],
       "villains": []
     },
     {

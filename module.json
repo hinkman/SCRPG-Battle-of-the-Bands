@@ -1,8 +1,8 @@
 {
     "id": "scrpg-battle-of-the-bands",
     "title": "SCRPG Battle of the Bands",
-    "description": "Compendium content for the Sentinel Comics RPG adventure issue Battle of the Bands (core book pp. 254–266) for the scrpg-foundry system. Includes a Foundry Scene pack (Opening Act, The Headliners) plus an Actor pack organized by scene then object type: SCRPG scene trackers, challenge environments with twists, minions, and Helfyre villains (no upgrades/masteries).",
-    "version": "0.1.1",
+    "description": "Compendium content for the Sentinel Comics RPG adventure issue Battle of the Bands (core book pp. 254–266) for the scrpg-foundry system. Includes a Foundry Scene pack (Opening Act, The Headliners) plus an Actor pack organized by scene then object type: SCRPG scene trackers, the Rockstar hero (pp. 330–332), challenge environments with twists, minions, and Helfyre villains (no upgrades/masteries).",
+    "version": "0.1.2",
     "compatibility": {
         "minimum": "14",
         "verified": "14"
@@ -53,5 +53,5 @@
     ],
     "url": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands",
     "manifest": "https://raw.githubusercontent.com/hinkman/SCRPG-Battle-of-the-Bands/main/module.json",
-    "download": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands/releases/download/v0.1.1/scrpg-battle-of-the-bands.zip"
+    "download": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands/releases/download/v0.1.2/scrpg-battle-of-the-bands.zip"
 }
