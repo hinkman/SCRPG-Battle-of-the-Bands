@@ -1,6 +1,7 @@
 {
   "moduleId": "scrpg-battle-of-the-bands",
   "packKey": "battle-of-the-bands",
+  "scenePackKey": "battle-of-the-bands-scenes",
   "source": "Sentinel Comics: The Roleplaying Game, Adventure Issues, Battle of the Bands (pp. 254–266)",
   "scenes": [
     {

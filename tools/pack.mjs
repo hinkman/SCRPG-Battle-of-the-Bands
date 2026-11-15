@@ -94,14 +94,14 @@ function abilityIcons(icons = []) {
   return out;
 }
 
-function makeFolder({ name, parentId = null, sort = 0, idSeed, color = null }) {
+function makeFolder({ name, parentId = null, sort = 0, idSeed, color = null, type = "Actor" }) {
   const folderId = foundryId(idSeed);
   return {
     folder: {
       name,
       description: "",
       folder: parentId,
-      type: "Actor",
+      type,
       sorting: "a",
       sort,
       color,
@@ -155,12 +155,12 @@ function makeItem({ name, type, img, itemId, actorId, system, sort = 0 }) {
   };
 }
 
-function buildSceneActor(scene, folderId, ids) {
+function buildSceneTrackerActor(scene, folderId, ids) {
   const actorId = foundryId(`actor:scene:${scene.key}`);
-  if (ids.has(actorId)) throw new Error(`Duplicate scene id ${actorId}`);
+  if (ids.has(actorId)) throw new Error(`Duplicate scene tracker id ${actorId}`);
   ids.add(actorId);
   return baseActor({
-    name: scene.name,
+    name: `${scene.name} Tracker`,
     type: "scene",
     img: "icons/svg/clockwork.svg",
     folderId,
@@ -169,7 +169,8 @@ function buildSceneActor(scene, folderId, ids) {
     flags: {
       "scrpg-battle-of-the-bands": {
         sceneKey: scene.key,
-        notes: scene.notes || ""
+        notes: scene.notes || "",
+        role: "scrpg-scene-tracker"
       }
     },
     system: {
@@ -179,6 +180,121 @@ function buildSceneActor(scene, folderId, ids) {
       options: true
     }
   });
+}
+
+function buildFoundryScene(scene, folderId, ids, sort = 0) {
+  const sceneId = foundryId(`foundry-scene:${scene.key}`);
+  if (ids.has(sceneId)) throw new Error(`Duplicate Foundry scene id ${sceneId}`);
+  ids.add(sceneId);
+
+  const levelId = foundryId(`foundry-scene-level:${scene.key}`);
+  if (ids.has(levelId)) throw new Error(`Duplicate scene level id ${levelId}`);
+  ids.add(levelId);
+
+  return {
+    name: scene.name,
+    navigation: true,
+    active: false,
+    navOrder: sort,
+    navName: scene.name,
+    thumb: null,
+    width: 4000,
+    height: 3000,
+    padding: 0.25,
+    shiftX: 0,
+    shiftY: 0,
+    initial: { x: null, y: null, scale: null },
+    initialLevel: levelId,
+    grid: {
+      type: 1,
+      size: 100,
+      style: "solidLines",
+      thickness: 1,
+      color: "#000000",
+      alpha: 0.2,
+      distance: 5,
+      units: "ft"
+    },
+    tokenVision: true,
+    fog: {
+      mode: 1,
+      colors: { explored: null, unexplored: null }
+    },
+    environment: {
+      darknessLevel: 0,
+      darknessLock: false,
+      globalLight: {
+        enabled: false,
+        alpha: 0.5,
+        bright: false,
+        color: null,
+        coloration: 1,
+        luminosity: 0,
+        saturation: 0,
+        contrast: 0,
+        shadows: 0,
+        darkness: { min: 0, max: 1 }
+      },
+      cycle: true,
+      base: { hue: 0, intensity: 0, luminosity: 0, saturation: 0, shadows: 0 },
+      dark: { hue: 0.7138888888888889, intensity: 0, luminosity: -0.25, saturation: 0, shadows: 0 }
+    },
+    transition: { type: null, duration: 1500, activeOnly: false },
+    drawings: [],
+    tokens: [],
+    levels: [
+      {
+        _id: levelId,
+        name: "Level",
+        elevation: { bottom: 0, top: 20 },
+        background: {
+          color: "#2a1a3a",
+          src: null,
+          tint: "#ffffff",
+          alphaThreshold: 0.75
+        },
+        foreground: { src: null, tint: "#ffffff", alphaThreshold: 0.75 },
+        fog: { src: null },
+        textures: {
+          anchorX: 0.5,
+          anchorY: 0.5,
+          offsetX: 0,
+          offsetY: 0,
+          fit: "fill",
+          scaleX: 1,
+          scaleY: 1,
+          rotation: 0
+        },
+        visibility: { levels: [] },
+        sort: 0,
+        flags: {}
+      }
+    ],
+    lights: [],
+    notes: [],
+    sounds: [],
+    regions: [],
+    tiles: [],
+    walls: [],
+    playlist: null,
+    playlistSound: null,
+    journal: null,
+    journalEntryPage: null,
+    weather: "",
+    folder: folderId,
+    sort,
+    ownership: { default: 0 },
+    flags: {
+      "scrpg-battle-of-the-bands": {
+        sceneKey: scene.key,
+        notes: scene.notes || "",
+        trackerActorName: `${scene.name} Tracker`
+      }
+    },
+    _stats: STATS,
+    _id: sceneId,
+    _key: `!scenes!${sceneId}`
+  };
 }
 
 function buildEnvironmentActor(scene, folderId, ids) {
@@ -426,12 +542,10 @@ function buildVillainActor(scene, villain, folderId, ids, sort) {
   });
 }
 
-async function main() {
-  const dataPath = path.join(root, "src/data/battle-of-the-bands.json");
-  const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
-  const sourceRoot = path.join(root, "src/packs", data.packKey);
-  const packDest = path.join(root, "packs", data.packKey);
-
+async function packActors(data) {
+  const packKey = data.packKey;
+  const sourceRoot = path.join(root, "src/packs", packKey);
+  const packDest = path.join(root, "packs", packKey);
   clearDir(sourceRoot);
   clearDir(packDest);
 
@@ -443,20 +557,20 @@ async function main() {
     const { folder: sceneFolder, folderId: sceneFolderId } = makeFolder({
       name: scene.name,
       sort: sceneSort += 100000,
-      idSeed: `folder:scene:${scene.key}`
+      idSeed: `folder:scene:${scene.key}`,
+      type: "Actor"
     });
     documents.push(sceneFolder);
     writeJson(path.join(sourceRoot, scene.key, "_Folder.json"), sceneFolder);
 
     const typeFolders = [
-      { key: "scenes", label: "Scenes", builders: [] },
-      { key: "environments", label: "Environments", builders: [] },
-      { key: "minions", label: "Minions", builders: [] },
-      { key: "villains", label: "Villains", builders: [] }
+      { key: "scene-trackers", label: "Scene Trackers" },
+      { key: "environments", label: "Environments" },
+      { key: "minions", label: "Minions" },
+      { key: "villains", label: "Villains" }
     ];
 
-    // Always create type folders that have content (and Scenes/Environments always).
-    const wanted = new Set(["scenes", "environments"]);
+    const wanted = new Set(["scene-trackers", "environments"]);
     if (scene.minions?.length) wanted.add("minions");
     if (scene.villains?.length) wanted.add("villains");
 
@@ -468,16 +582,20 @@ async function main() {
         name: tf.label,
         parentId: sceneFolderId,
         sort: typeSort += 10000,
-        idSeed: `folder:${scene.key}:${tf.key}`
+        idSeed: `folder:${scene.key}:${tf.key}`,
+        type: "Actor"
       });
       folderIds[tf.key] = folderId;
       documents.push(folder);
       writeJson(path.join(sourceRoot, scene.key, tf.key, "_Folder.json"), folder);
     }
 
-    const sceneActor = buildSceneActor(scene, folderIds.scenes, ids);
-    documents.push(sceneActor);
-    writeJson(path.join(sourceRoot, scene.key, "scenes", `${slug(scene.name)}.json`), sceneActor);
+    const tracker = buildSceneTrackerActor(scene, folderIds["scene-trackers"], ids);
+    documents.push(tracker);
+    writeJson(
+      path.join(sourceRoot, scene.key, "scene-trackers", `${slug(tracker.name)}.json`),
+      tracker
+    );
 
     const envActor = buildEnvironmentActor(scene, folderIds.environments, ids);
     documents.push(envActor);
@@ -502,10 +620,38 @@ async function main() {
   }
 
   await compilePack(sourceRoot, packDest, { recursive: true, log: true });
-
   const actors = documents.filter((d) => d._key?.startsWith("!actors!")).length;
   const folders = documents.filter((d) => d._key?.startsWith("!folders!")).length;
-  console.log(`Packed ${actors} actors and ${folders} folders into packs/${data.packKey}`);
+  console.log(`Packed ${actors} actors and ${folders} folders into packs/${packKey}`);
+}
+
+async function packFoundryScenes(data) {
+  const packKey = data.scenePackKey || "battle-of-the-bands-scenes";
+  const sourceRoot = path.join(root, "src/packs", packKey);
+  const packDest = path.join(root, "packs", packKey);
+  clearDir(sourceRoot);
+  clearDir(packDest);
+
+  const documents = [];
+  const ids = new Set();
+  let sort = 0;
+
+  for (const scene of data.scenes) {
+    const foundryScene = buildFoundryScene(scene, null, ids, sort += 1000);
+    documents.push(foundryScene);
+    writeJson(path.join(sourceRoot, `${slug(scene.name)}.json`), foundryScene);
+  }
+
+  await compilePack(sourceRoot, packDest, { recursive: true, log: true });
+  const scenes = documents.filter((d) => d._key?.startsWith("!scenes!")).length;
+  console.log(`Packed ${scenes} Foundry scenes into packs/${packKey}`);
+}
+
+async function main() {
+  const dataPath = path.join(root, "src/data/battle-of-the-bands.json");
+  const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+  await packActors(data);
+  await packFoundryScenes(data);
 }
 
 main().catch((err) => {

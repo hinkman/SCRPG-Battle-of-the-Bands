@@ -4,18 +4,26 @@ Unofficial Foundry VTT module for the Sentinel Comics RPG adventure issue **Batt
 
 ## Contents
 
-One Actor compendium, **Battle of the Bands**, organized first by scene name, then by object type:
+### Battle of the Bands Scenes (Foundry Scene pack)
+Import these into the **Scenes** sidebar:
+- **Opening Act**
+- **The Headliners**
 
-### Opening Act
-- **Scenes** — Scene tracker (standard 2 / 4 / 2)
+### Battle of the Bands Actors (Actor pack)
+Organized by scene name, then by object type:
+
+#### Opening Act
+- **Scene Trackers** — Opening Act Tracker (SCRPG Green/Yellow/Red tracker; Actor type `scene`)
 - **Environments** — See A Million Faces (challenge twists modeled as environment twists)
 - **Minions** — Moshers (d6), Bouncers (d8)
 
-### The Headliners
-- **Scenes** — Scene tracker (standard 2 / 4 / 2)
-- **Environments** — Disrupt the Force Bubble (challenge twists modeled as environment twists)
-- **Villains** — Screech, Blister, Deep Root, Snare, Drudge (issue versions; no upgrades or masteries)
+#### The Headliners
+- **Scene Trackers** — The Headliners Tracker
+- **Environments** — Disrupt the Force Bubble
+- **Villains** — Screech, Blister, Deep Root, Snare, Drudge (issue versions; no upgrades/masteries)
 - **Minions** — Sonic Projections (d6)
+
+> Note: Foundry’s Scenes directory only accepts native Scene documents. SCRPG’s mechanical scene tracker is an Actor subtype (`scene`) and lives in the Actors pack as “\* Tracker”.
 
 ## Install
 
@@ -23,7 +31,7 @@ Foundry 14 and `scrpg-foundry` 0.9.15 or newer. Install from:
 
 `https://raw.githubusercontent.com/hinkman/SCRPG-Battle-of-the-Bands/main/module.json`
 
-## Rebuild the pack
+## Rebuild the packs
 
 ```bash
 npm install

@@ -1,5 +1,5 @@
 {
-  "name": "Opening Act",
+  "name": "The Headliners Tracker",
   "type": "scene",
   "img": "icons/svg/clockwork.svg",
   "system": {
@@ -18,21 +18,22 @@
     "options": true
   },
   "prototypeToken": {
-    "name": "Opening Act",
+    "name": "The Headliners Tracker",
     "displayName": 20,
     "actorLink": true
   },
   "items": [],
   "effects": [],
-  "folder": "3KSE3UUmYFVCGCKC",
+  "folder": "BLsfdTJGaj6SGgDy",
   "sort": 1000,
   "ownership": {
     "default": 0
   },
   "flags": {
     "scrpg-battle-of-the-bands": {
-      "sceneKey": "opening-act",
-      "notes": "Standard 8-space tracker (2/4/2). Rockstar starts the concert with an Overcome on See A Million Faces."
+      "sceneKey": "the-headliners",
+      "notes": "If See A Million Faces was completed, reset the tracker. If Scene 1 ended in disastrous failure, mark off the four leftmost spaces (both Green and two Yellow).",
+      "role": "scrpg-scene-tracker"
     }
   },
   "_stats": {
@@ -43,6 +44,6 @@
     "modifiedTime": 1763182800000,
     "lastModifiedBy": null
   },
-  "_id": "62g4QiELyQBv0iU4",
-  "_key": "!actors!62g4QiELyQBv0iU4"
+  "_id": "Ej4ZnaVf76m5AXaB",
+  "_key": "!actors!Ej4ZnaVf76m5AXaB"
 }

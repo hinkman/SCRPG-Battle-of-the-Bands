@@ -1,8 +1,8 @@
 {
     "id": "scrpg-battle-of-the-bands",
     "title": "SCRPG Battle of the Bands",
-    "description": "Compendium content for the Sentinel Comics RPG adventure issue Battle of the Bands (core book pp. 254–266) for the scrpg-foundry system. One Actor pack organized by scene, then by object type: scene trackers, challenge environments with twists, minions, and Helfyre villains (no upgrades/masteries).",
-    "version": "0.1.0",
+    "description": "Compendium content for the Sentinel Comics RPG adventure issue Battle of the Bands (core book pp. 254–266) for the scrpg-foundry system. Includes a Foundry Scene pack (Opening Act, The Headliners) plus an Actor pack organized by scene then object type: SCRPG scene trackers, challenge environments with twists, minions, and Helfyre villains (no upgrades/masteries).",
+    "version": "0.1.1",
     "compatibility": {
         "minimum": "14",
         "verified": "14"
@@ -28,8 +28,19 @@
     },
     "packs": [
         {
+            "name": "battle-of-the-bands-scenes",
+            "label": "Battle of the Bands Scenes",
+            "path": "packs/battle-of-the-bands-scenes",
+            "type": "Scene",
+            "ownership": {
+                "GAMEMASTER": "OWNER",
+                "ASSISTANT": "OWNER",
+                "PLAYER": "OBSERVER"
+            }
+        },
+        {
             "name": "battle-of-the-bands",
-            "label": "Battle of the Bands",
+            "label": "Battle of the Bands Actors",
             "path": "packs/battle-of-the-bands",
             "type": "Actor",
             "system": "scrpg-foundry",
@@ -42,5 +53,5 @@
     ],
     "url": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands",
     "manifest": "https://raw.githubusercontent.com/hinkman/SCRPG-Battle-of-the-Bands/main/module.json",
-    "download": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands/releases/download/v0.1.0/scrpg-battle-of-the-bands.zip"
+    "download": "https://github.com/hinkman/SCRPG-Battle-of-the-Bands/releases/download/v0.1.1/scrpg-battle-of-the-bands.zip"
 }
