@@ -1,0 +1,20 @@
+{
+  "name": "Villains",
+  "description": "",
+  "folder": "d8mXvBAN3sIRMm6c",
+  "type": "Actor",
+  "sorting": "a",
+  "sort": 40000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.000",
+    "systemId": "scrpg-foundry",
+    "systemVersion": "0.9.15",
+    "createdTime": 1763182800000,
+    "modifiedTime": 1763182800000,
+    "lastModifiedBy": null
+  },
+  "_id": "Tb14a4ap9ZTWKD4n",
+  "_key": "!folders!Tb14a4ap9ZTWKD4n"
+}
