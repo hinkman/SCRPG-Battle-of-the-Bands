@@ -2,7 +2,7 @@
   "moduleId": "scrpg-battle-of-the-bands",
   "packKey": "battle-of-the-bands",
   "scenePackKey": "battle-of-the-bands-scenes",
-  "source": "Sentinel Comics: The Roleplaying Game, Adventure Issues, Battle of the Bands (pp. 254–266)",
+  "source": "Sentinel Comics: The Roleplaying Game, Adventure Issues, Battle of the Bands (pp. 254\u2013266)",
   "scenes": [
     {
       "key": "opening-act",
@@ -63,128 +63,6 @@
             "name": "Quiet the Riot",
             "description": "Bouncers have +1 to all rolls to make Hinder actions."
           }
-        }
-      ],
-      "heroes": [
-        {
-          "name": "Rockstar",
-          "alias": "Megan \"The Hammer\" Lee",
-          "sourcePages": "330–332",
-          "requiredForScenes": ["Opening Act", "The Headliners"],
-          "gender": "Female",
-          "age": "Late-Teens",
-          "height": "5'7\"",
-          "eyes": "Blue",
-          "hair": "Blonde",
-          "skin": "Fair",
-          "build": "Athletic",
-          "costume": "Rockstar changes her outfit with some regularity, always looking for more hip and/or audacious stage clothes. She also changes the color of the ends of her hair, but always paints the star over her right eye to match.",
-          "background": "Unremarkable",
-          "powerSource": "Accident",
-          "archetype": "Physical Powerhouse",
-          "personality": "Arrogant",
-          "collections": ["Daybreak Vol. 1"],
-          "biography": "Megan Lee spent a lot of time daydreaming. When her dad Rick had talked about spending the summer together, she had thought it would be more exciting than poking rocks, but \"father-daughter bonding time\" turned out to be a series of dig sites as her geologist father measured rocks. At Dig Site 17 in Arizona she fell more than a hundred feet into a quarry and survived. Walking back, she found her rock hammer's metal handle bent; when she grabbed it, her hands covered in rock and she pulled it straight as if it were a paperclip. She spent her junior year discovering her powers — rocky protection and super strength — as things happened to her.",
-          "health": {
-            "max": 30,
-            "greenLow": 23,
-            "yellowHigh": 22,
-            "yellowLow": 12,
-            "redHigh": 11,
-            "redLow": 1
-          },
-          "statusDie": {
-            "green": "d10",
-            "yellow": "d8",
-            "red": "d6"
-          },
-          "principles": [
-            {
-              "name": "Principle of Ambition",
-              "roleplaying": "There is something you want, and you will strive towards achieving your goals, no matter the cost. You see paths to victory that no one else will.",
-              "minorTwist": "How are the pursuit of your goals getting in the way of being a hero in this situation?",
-              "majorTwist": "What did you just pass up or miss that could have helped you achieve your biggest goal at last?",
-              "greenAbility": "Overcome a situation where someone else has given you a bonus from a Boost. Use your Max die. You and each of your allies gain a hero point."
-            },
-            {
-              "name": "Principle of Strength",
-              "roleplaying": "You are very strong, so you must be careful to not crush delicate things. You do not need to roll to perform mundane acts of great strength.",
-              "minorTwist": "What just broke?",
-              "majorTwist": "Who just broke?",
-              "greenAbility": "Overcome using brute force. Use your Max die. You and each of your allies gain a hero point."
-            }
-          ],
-          "powers": [
-            { "name": "Stone", "die": "d12" },
-            { "name": "Strength", "die": "d8" },
-            { "name": "Vitality", "die": "d8" },
-            { "name": "Transmutation", "die": "d6" }
-          ],
-          "qualities": [
-            { "name": "Creativity", "die": "d10" },
-            { "name": "Close Combat", "die": "d8" },
-            { "name": "Hard Rock Lifestyle", "die": "d8" },
-            { "name": "Leadership", "die": "d6" }
-          ],
-          "abilities": [
-            {
-              "name": "Rock Out",
-              "aux": "green",
-              "type": "R",
-              "icons": ["boost"],
-              "gameText": "When you change personal zones, you may Boost by rolling your single Transmutation die."
-            },
-            {
-              "name": "Shake It Off",
-              "aux": "green",
-              "type": "I",
-              "icons": [],
-              "gameText": "Reduce any physical or energy damage you take by 1 while you are in the Green zone, 2 while in the Yellow zone, and 3 while in the Red zone."
-            },
-            {
-              "name": "Wicked Solo",
-              "aux": "green",
-              "type": "A",
-              "icons": ["attack"],
-              "gameText": "Attack using Strength. The target of that Attack must take the Attack action against you on its next turn, if possible."
-            },
-            {
-              "name": "Drop the Hammer",
-              "aux": "yellow",
-              "type": "A",
-              "icons": ["attack", "hinder"],
-              "gameText": "Attack using Strength. Hinder that same target using your Min die."
-            },
-            {
-              "name": "Shard Shatter",
-              "aux": "yellow",
-              "type": "R",
-              "icons": ["attack"],
-              "gameText": "When your personal zone changes, Attack all close enemy targets by rolling your single Stone die."
-            },
-            {
-              "name": "Standing Ovation",
-              "aux": "yellow",
-              "type": "R",
-              "icons": ["recover"],
-              "gameText": "When you eliminate a minion with an Attack using Close Combat, Recover health equal to your Min die."
-            },
-            {
-              "name": "Encore!",
-              "aux": "red",
-              "type": "A",
-              "icons": ["hinder", "recover"],
-              "gameText": "Hinder yourself using Vitality. Use your Min die. Recover health equal to your Max+Mid dice."
-            },
-            {
-              "name": "Power Chord",
-              "aux": "red",
-              "type": "A",
-              "icons": ["attack"],
-              "gameText": "Attack using Stone. Use your Max+Mid dice."
-            }
-          ],
-          "out": "Hinder an opponent using Stone."
         }
       ],
       "villains": []
@@ -260,45 +138,87 @@
           "archetype": "Inhibitor",
           "health": 50,
           "powers": [
-            { "name": "Leaping", "die": "d8" },
-            { "name": "Presence", "die": "d10" },
-            { "name": "Sonic", "die": "d10" },
-            { "name": "Vitality", "die": "d8" }
+            {
+              "name": "Leaping",
+              "die": "d8"
+            },
+            {
+              "name": "Presence",
+              "die": "d10"
+            },
+            {
+              "name": "Sonic",
+              "die": "d10"
+            },
+            {
+              "name": "Vitality",
+              "die": "d8"
+            }
           ],
           "qualities": [
-            { "name": "Banter", "die": "d10" },
-            { "name": "Creativity", "die": "d8" },
-            { "name": "Ranged Combat", "die": "d8" },
-            { "name": "Screamo", "die": "d8" }
+            {
+              "name": "Banter",
+              "die": "d10"
+            },
+            {
+              "name": "Creativity",
+              "die": "d8"
+            },
+            {
+              "name": "Ranged Combat",
+              "die": "d8"
+            },
+            {
+              "name": "Screamo",
+              "die": "d8"
+            }
           ],
           "status": [
-            { "name": "3+ Heroes with Penalties", "die": "d10" },
-            { "name": "1-2 Heroes with Penalties", "die": "d8" },
-            { "name": "0 Heroes with Penalties", "die": "d6" }
+            {
+              "name": "3+ Heroes with Penalties",
+              "die": "d10"
+            },
+            {
+              "name": "1-2 Heroes with Penalties",
+              "die": "d8"
+            },
+            {
+              "name": "0 Heroes with Penalties",
+              "die": "d6"
+            }
           ],
           "abilities": [
             {
               "name": "Earworm",
               "type": "R",
-              "icons": ["defend"],
+              "icons": [
+                "defend"
+              ],
               "gameText": "When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage."
             },
             {
               "name": "Ring their Ears",
               "type": "A",
-              "icons": ["attack"],
+              "icons": [
+                "attack"
+              ],
               "gameText": "Attack using Sonic. Use your Max die. A target dealt damage this way Attacks an ally by rolling their single largest power die."
             },
             {
               "name": "Scream of Anger",
               "type": "A",
-              "icons": ["hinder"],
+              "icons": [
+                "hinder"
+              ],
               "gameText": "Hinder using Sonic and use your Max+Mid dice, or use your Max die and make it persistent and exclusive."
             },
             {
               "name": "Shout it Out Loud",
               "type": "A",
-              "icons": ["hinder", "defend"],
+              "icons": [
+                "hinder",
+                "defend"
+              ],
               "gameText": "Hinder multiple targets using Banter. Use your Mid die. You and any nearby allies Defend using your Max die."
             }
           ]
@@ -310,42 +230,76 @@
           "archetype": "Fragile",
           "health": 30,
           "powers": [
-            { "name": "Fire", "die": "d12" },
-            { "name": "Presence", "die": "d8" }
+            {
+              "name": "Fire",
+              "die": "d12"
+            },
+            {
+              "name": "Presence",
+              "die": "d8"
+            }
           ],
           "qualities": [
-            { "name": "Close Combat", "die": "d8" },
-            { "name": "Creativity", "die": "d10" },
-            { "name": "Hot Licks", "die": "d8" }
+            {
+              "name": "Close Combat",
+              "die": "d8"
+            },
+            {
+              "name": "Creativity",
+              "die": "d10"
+            },
+            {
+              "name": "Hot Licks",
+              "die": "d8"
+            }
           ],
           "status": [
-            { "name": "Green: 30-23", "die": "d10" },
-            { "name": "Yellow: 22-12", "die": "d8" },
-            { "name": "Red: 11-1", "die": "d6" }
+            {
+              "name": "Green: 30-23",
+              "die": "d10"
+            },
+            {
+              "name": "Yellow: 22-12",
+              "die": "d8"
+            },
+            {
+              "name": "Red: 11-1",
+              "die": "d6"
+            }
           ],
           "abilities": [
             {
               "name": "Blazing Axe",
               "type": "A",
-              "icons": ["attack"],
+              "icons": [
+                "attack"
+              ],
               "gameText": "Attack one target using Fire. Use your Max die. That target cannot Defend or use reactions against this Attack. Attack multiple other nearby targets using your Min die."
             },
             {
               "name": "Blistering Solo",
               "type": "A",
-              "icons": ["attack"],
+              "icons": [
+                "attack"
+              ],
               "gameText": "Attack using Creativity. Then remove all bonuses from the target."
             },
             {
               "name": "Burning Melody",
               "type": "A",
-              "icons": ["hinder", "attack"],
+              "icons": [
+                "hinder",
+                "attack"
+              ],
               "gameText": "Hinder one target using Presence. Use your Max die. Attack that target using your Mid die."
             },
             {
               "name": "Sleep Now in the Fire",
               "type": "R",
-              "icons": ["recover", "boost"],
+              "icons": [
+                "recover",
+                "boost"
+              ],
               "gameText": "When Attacked with Fire, recover that amount of Health instead of taking damage. When Hindered with Fire, Boost yourself instead."
             },
             {
@@ -363,37 +317,74 @@
           "archetype": "Indomitable",
           "health": 65,
           "powers": [
-            { "name": "Awareness", "die": "d6" },
-            { "name": "Plants", "die": "d10" },
-            { "name": "Strength", "die": "d8" },
-            { "name": "Swinging", "die": "d8" }
+            {
+              "name": "Awareness",
+              "die": "d6"
+            },
+            {
+              "name": "Plants",
+              "die": "d10"
+            },
+            {
+              "name": "Strength",
+              "die": "d8"
+            },
+            {
+              "name": "Swinging",
+              "die": "d8"
+            }
           ],
           "qualities": [
-            { "name": "Close Combat", "die": "d6" },
-            { "name": "Imposing", "die": "d10" },
-            { "name": "Self-Discipline", "die": "d8" },
-            { "name": "Steady Rhythm", "die": "d8" }
+            {
+              "name": "Close Combat",
+              "die": "d6"
+            },
+            {
+              "name": "Imposing",
+              "die": "d10"
+            },
+            {
+              "name": "Self-Discipline",
+              "die": "d8"
+            },
+            {
+              "name": "Steady Rhythm",
+              "die": "d8"
+            }
           ],
           "status": [
-            { "name": "Always (Constant)", "die": "d8" }
+            {
+              "name": "Always (Constant)",
+              "die": "d8"
+            }
           ],
           "abilities": [
             {
               "name": "Bark Shield",
               "type": "R",
-              "icons": ["defend", "boost"],
+              "icons": [
+                "defend",
+                "boost"
+              ],
               "gameText": "When an ally is Attacked, Defend them by rolling your single Plants die. Boost yourself by that amount."
             },
             {
               "name": "Can't Stop the Beatdown",
               "type": "A",
-              "icons": ["attack", "hinder", "defend"],
+              "icons": [
+                "attack",
+                "hinder",
+                "defend"
+              ],
               "gameText": "Attack using Swinging. Either Hinder that target using Max, or Defend yourself using Min and you and that target end up elsewhere in the scene."
             },
             {
               "name": "Photosynthestrike",
               "type": "A",
-              "icons": ["attack", "recover"],
+              "icons": [
+                "attack",
+                "recover"
+              ],
               "gameText": "Attack using Close Combat. Use your Max die. Recover Health equal to your Min die."
             },
             {
@@ -405,7 +396,10 @@
             {
               "name": "Writhing Flora",
               "type": "A",
-              "icons": ["hinder", "boost"],
+              "icons": [
+                "hinder",
+                "boost"
+              ],
               "gameText": "Hinder multiple nearby targets using Plants. Boost yourself using your Max die."
             }
           ]
@@ -417,44 +411,83 @@
           "archetype": "Inhibitor",
           "health": 55,
           "powers": [
-            { "name": "Drum Throne", "die": "d8" },
-            { "name": "Energy Shields", "die": "d10" },
-            { "name": "Sonic", "die": "d8" }
+            {
+              "name": "Drum Throne",
+              "die": "d8"
+            },
+            {
+              "name": "Energy Shields",
+              "die": "d10"
+            },
+            {
+              "name": "Sonic",
+              "die": "d8"
+            }
           ],
           "qualities": [
-            { "name": "Conviction", "die": "d10" },
-            { "name": "Insight", "die": "d8" },
-            { "name": "Magical Lore", "die": "d8" },
-            { "name": "Percussionist", "die": "d8" }
+            {
+              "name": "Conviction",
+              "die": "d10"
+            },
+            {
+              "name": "Insight",
+              "die": "d8"
+            },
+            {
+              "name": "Magical Lore",
+              "die": "d8"
+            },
+            {
+              "name": "Percussionist",
+              "die": "d8"
+            }
           ],
           "status": [
-            { "name": "3+ Heroes with Penalties", "die": "d10" },
-            { "name": "1-2 Heroes with Penalties", "die": "d8" },
-            { "name": "0 Heroes with Penalties", "die": "d6" }
+            {
+              "name": "3+ Heroes with Penalties",
+              "die": "d10"
+            },
+            {
+              "name": "1-2 Heroes with Penalties",
+              "die": "d8"
+            },
+            {
+              "name": "0 Heroes with Penalties",
+              "die": "d6"
+            }
           ],
           "abilities": [
             {
               "name": "Drive the Beat Home",
               "type": "R",
-              "icons": ["hinder"],
+              "icons": [
+                "hinder"
+              ],
               "gameText": "When a nearby hero that you can see invokes a twist, roll your Sonic die as a Hinder against them."
             },
             {
               "name": "Encapsulate",
               "type": "A",
-              "icons": ["hinder"],
+              "icons": [
+                "hinder"
+              ],
               "gameText": "Hinder multiple targets using Energy Shields. While a hero has this penalty, reduce all their power dice by one size."
             },
             {
               "name": "Resonant Shield",
               "type": "R",
-              "icons": ["defend"],
+              "icons": [
+                "defend"
+              ],
               "gameText": "When Attacked by someone with a penalty you created, Defend by rolling your single status die, and the attacker also suffers that much damage."
             },
             {
               "name": "Switch Up the Timing",
               "type": "A",
-              "icons": ["hinder", "boost"],
+              "icons": [
+                "hinder",
+                "boost"
+              ],
               "gameText": "Select a nearby target. Either turn all bonuses on that target to equivalent penalties, or move a penalty from that target to another target that you can see."
             }
           ]
@@ -466,38 +499,79 @@
           "archetype": "Loner",
           "health": 45,
           "powers": [
-            { "name": "Infernal", "die": "d10" },
-            { "name": "Presence", "die": "d8" },
-            { "name": "Vitality", "die": "d6" }
+            {
+              "name": "Infernal",
+              "die": "d10"
+            },
+            {
+              "name": "Presence",
+              "die": "d8"
+            },
+            {
+              "name": "Vitality",
+              "die": "d6"
+            }
           ],
           "qualities": [
-            { "name": "Alertness", "die": "d8" },
-            { "name": "Blood Sucking Fiend", "die": "d8" },
-            { "name": "Close Combat", "die": "d8" },
-            { "name": "Persuasion", "die": "d8" }
+            {
+              "name": "Alertness",
+              "die": "d8"
+            },
+            {
+              "name": "Blood Sucking Fiend",
+              "die": "d8"
+            },
+            {
+              "name": "Close Combat",
+              "die": "d8"
+            },
+            {
+              "name": "Persuasion",
+              "die": "d8"
+            }
           ],
           "status": [
-            { "name": "0 Other Villains in the Scene", "die": "d10" },
-            { "name": "1-2 Other Villains in the Scene", "die": "d8" },
-            { "name": "3+ Other Villains in the Scene", "die": "d6" }
+            {
+              "name": "0 Other Villains in the Scene",
+              "die": "d10"
+            },
+            {
+              "name": "1-2 Other Villains in the Scene",
+              "die": "d8"
+            },
+            {
+              "name": "3+ Other Villains in the Scene",
+              "die": "d6"
+            }
           ],
           "abilities": [
             {
               "name": "Consume their Lifeforce",
               "type": "A",
-              "icons": ["hinder", "recover"],
+              "icons": [
+                "hinder",
+                "recover"
+              ],
               "gameText": "Hinder multiple targets using Infernal. Recover Health equal to the number of targets Hindered this way."
             },
             {
               "name": "Enthralling Target",
               "type": "R",
-              "icons": ["defend", "hinder", "boost"],
+              "icons": [
+                "defend",
+                "hinder",
+                "boost"
+              ],
               "gameText": "When Attacked, Defend yourself by rolling your single Presence die. If this negates the Attack entirely, Hinder that target and Boost yourself with that same die roll."
             },
             {
               "name": "Feast on the Living",
               "type": "A",
-              "icons": ["attack", "hinder", "recover"],
+              "icons": [
+                "attack",
+                "hinder",
+                "recover"
+              ],
               "gameText": "Attack using Close Combat. Use your Max die. Hinder that target with your Mid die. Recover Health equal to your Min die."
             },
             {
