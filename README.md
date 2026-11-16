@@ -14,7 +14,6 @@ Organized by scene name, then by object type:
 
 #### Opening Act
 - **Scene Trackers** — Opening Act Tracker (SCRPG Green/Yellow/Red tracker; Actor type `scene`)
-- **Heroes** — Rockstar (Megan “The Hammer” Lee; core book pp. 330–332; required for both scenes)
 - **Environments** — See A Million Faces (challenge twists modeled as environment twists)
 - **Minions** — Moshers (d6), Bouncers (d8)
 
